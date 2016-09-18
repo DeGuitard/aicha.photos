@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" <% if (page == 'index') { %> class="full-bg-img" <% } %> >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Deps -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main-1.0.css" rel="stylesheet" type='text/css'>
+
+    <!-- JS Deps -->
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-thumbnail.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-fullscreen.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <title>Aïcha - <%= title %></title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Aïcha</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li <% if (page == 'livre')    { %> class="active" <% }%>><a href="/livre">Livre</a></li>
+                <li <% if (page == 'ocean')    { %> class="active" <% }%>><a href="/ocean">Océan</a></li>
+                <li <% if (page == 'foret')    { %> class="active" <% }%>><a href="/foret">Forêt</a></li>
+                <li <% if (page == 'chevaux')  { %> class="active" <% }%>><a href="/chevaux">Chevaux</a></li>
+                <li <% if (page == 'contact')  { %> class="active" <% }%>><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<%- body %>
+<div class="navbar-fix"></div>
+<div id="scroll-down" class="hidden-sm">
+    <a href="#" id="scroll-down-button"><span></span></a>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("*").on("contextmenu", "img", function() {
+            return false;
+        });
+        var scrollDownDiv = $('#scroll-down');
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            scrollDownDiv.hide();
+        }
+        if (scrollDownDiv) {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    scrollDownDiv.fadeOut(250);
+                }
+            });
+            $('#scroll-down-button').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $(window).scrollTop() + $(window).height()}, 500, 'swing');
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
