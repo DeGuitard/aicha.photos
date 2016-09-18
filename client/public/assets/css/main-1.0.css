@@ -3,7 +3,7 @@
 /****************************************************************/
 html, body  { height: 100%; }
 body        { font-family: 'Open Sans' !important; background: none; }
-.big-title  { font-size: 5em; }
+.big-title  { font-size: 4em; }
 .navbar-fix { height: 74px;}
 .navbar-inverse { background-color: #000; }
 
@@ -22,7 +22,7 @@ h2 {
 }
 
 blockquote p {
-    font-size: 1.1em !important;
+    font-size: 17px !important;
 }
 
 .container p {
