@@ -14,7 +14,7 @@ app.get('/livre',                   function(req, res) { res.render('livre',    
 app.get('/ocean',                   function(req, res) { res.render('ocean',                    { page: 'ocean',    title: 'Océan' }); });
 app.get('/foret',                   function(req, res) { res.render('foret',                    { page: 'foret',    title: 'Forêt' }); });
 app.get('/chevaux',                 function(req, res) { res.render('chevaux',                  { page: 'chevaux',  title: 'Chevaux' }); });
-//app.get('/contact',                 function(req, res) { res.render('contact',                  { page: 'contact',  title: 'Contact' }); });
+app.get('/contact',                 function(req, res) { res.render('contact',                  { page: 'contact',  title: 'Contact' }); });
 
 
 app.use(function(req, res, next) { res.render('404', { page: '404',  title: '404' }); });

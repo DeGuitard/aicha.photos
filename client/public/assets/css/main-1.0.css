@@ -178,6 +178,14 @@ blockquote p {
     background-size: cover;
 }
 
+.img-banner-contact {
+    background: url(/assets/img/banner-contact.jpg) no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 .big-title-banner {
     position: absolute;
     top: 20px;
