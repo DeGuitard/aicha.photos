@@ -40,7 +40,5 @@ jspm_packages
 # IntelliJ IDE
 .idea
 
-# Private and heavy images
-client/public/assets/img/ocean
-client/public/assets/img/foret
-client/public/assets/img/chevaux
+# Yarn files
+yarn.lock
