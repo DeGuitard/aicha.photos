@@ -155,6 +155,14 @@ blockquote p {
     color: #FFF;
 }
 
+.img-banner-livres {
+    background: url(/assets/img/banner-livres.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .img-banner-ocean {
     background: url(/assets/img/banner-ocean.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -239,4 +247,23 @@ blockquote p {
 }
 .press-item:hover {
     opacity: 1;
+}
+.thumbnail {
+    text-align: center;
+    border: 0px;
+}
+.image-video {
+    position: relative;
+}
+.image-video span {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    font-size: 80px;
+}
+.image-video img {
+    cursor: pointer;
+}
+.image-video:hover span {
+    color: black;
 }
