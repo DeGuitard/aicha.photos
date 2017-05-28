@@ -42,3 +42,9 @@ jspm_packages
 
 # Yarn files
 yarn.lock
+
+# Protected assets
+client/public/assets/img/chevaux
+client/public/assets/img/ocean
+client/public/assets/img/foret
+client/public/assets/video
