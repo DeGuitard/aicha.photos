@@ -17,6 +17,7 @@ app.get('/matin-des-arbres',        function(req, res) { res.render('matin-des-a
 app.get('/ocean',                   function(req, res) { res.render('ocean',                    { page: 'ocean',        title: 'Océan' }); });
 app.get('/foret',                   function(req, res) { res.render('foret',                    { page: 'foret',        title: 'Forêt' }); });
 app.get('/chevaux',                 function(req, res) { res.render('chevaux',                  { page: 'chevaux',      title: 'Chevaux' }); });
+app.get('/reportages',              function(req, res) { res.render('reportages',               { page: 'reportages',   title: 'Reportages' }); });
 app.get('/contact',                 function(req, res) { res.render('contact',                  { page: 'contact',      title: 'Contact' }); });
 
 
