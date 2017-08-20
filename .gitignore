@@ -42,6 +42,7 @@ jspm_packages
 
 # Yarn files
 yarn.lock
+package-lock.json
 
 # Protected assets
 client/public/assets/img/chevaux
