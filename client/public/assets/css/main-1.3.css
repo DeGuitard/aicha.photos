@@ -25,6 +25,7 @@ h2 {
 blockquote p {
     font-size: 17px !important;
     text-align: justify;
+	margin-top: 0px !important;
 }
 
 .container p {
@@ -278,4 +279,18 @@ blockquote p {
 }
 .image-video:hover span {
     color: black;
+}
+.portrait {
+	height: 100px;
+	position: relative;
+	display: inline-block;
+	top: 50%;
+}
+.portait-container {
+	text-align: center;
+}
+@media (min-width: 800px) {
+	.portrait {
+		transform: translateY(40%);
+	}
 }
