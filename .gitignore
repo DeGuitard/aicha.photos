@@ -45,8 +45,4 @@ yarn.lock
 package-lock.json
 
 # Protected assets
-client/public/assets/img/chevaux
-client/public/assets/img/ocean
-client/public/assets/img/foret
-client/public/assets/img/reportages
 client/public/assets/video
