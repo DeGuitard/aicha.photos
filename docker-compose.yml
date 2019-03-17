@@ -1,0 +1,8 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+         - '80:7800'
+        volumes:
+         - ./client:/usr/src/aicha.photos/client
