@@ -44,5 +44,4 @@ jspm_packages
 yarn.lock
 package-lock.json
 
-# Protected assets
-client/public/assets/video
+client/public/assets
