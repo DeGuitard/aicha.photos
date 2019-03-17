@@ -192,8 +192,8 @@ blockquote p {
     background-size: cover;
 }
 
-.img-banner-chevaux {
-    background: url(/assets/img/banner-chevaux.jpg) no-repeat center center fixed;
+.img-banner-voyages {
+    background: url(/assets/img/banner-voyages.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
