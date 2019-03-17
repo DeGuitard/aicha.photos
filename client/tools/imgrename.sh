@@ -10,7 +10,7 @@ do
     filename=${filename%.*}
     filename=${filename/-th}
 
-    if [ $filename -ge $NEWFILE ]
+    if [ $filename -ge $NEWFILE ];
     then
         mv "$file" "$(($filename + $INCREMENT))".$extension
         mv "${filename}-th.jpg" "$((${filename} + $INCREMENT))-th".jpg
