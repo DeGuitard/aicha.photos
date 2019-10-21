@@ -1,8 +1,10 @@
-version: '3'
+version: "3.7"
 services:
-    web:
-        build: .
-        ports:
-         - '80:7800'
-        volumes:
-         - ./client:/usr/src/aicha.photos/client
+  aphotos:
+    build: .
+    image: aphotos
+    ports:
+      - "7800:7800"
+    volumes:
+      - "./client:/usr/src/aicha.photos/client"
+      - "./server:/usr/src/aicha.photos/server"
