@@ -253,6 +253,7 @@ blockquote p {
     display: inline-block;
     opacity: 0.5;
     transition: opacity 250ms;
+    margin-bottom: 30px;
 }
 .press-item img {
     height: 80px;
