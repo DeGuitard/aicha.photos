@@ -20,6 +20,7 @@ app.get('/foret',                   function(req, res) { res.render('foret',    
 app.get('/chevaux',                 function(req, res) { res.render('chevaux',                  { page: 'chevaux',    title: 'Chevaux' }); });
 app.get('/reportages',              function(req, res) { res.render('reportages',               { page: 'reportages', title: 'Reportages' }); });
 app.get('/contact',                 function(req, res) { res.render('contact',                  { page: 'contact',    title: 'Contact' }); });
+app.get('/voyages',                 function(req, res) { res.render('voyages',                  { page: 'voyages',    title: 'Voyages' }); });
 
 
 app.use(function(req, res, next) { res.render('404', { page: '404',  title: '404' }); });
