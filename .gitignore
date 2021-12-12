@@ -43,5 +43,3 @@ jspm_packages
 # Yarn files
 yarn.lock
 package-lock.json
-
-client/public/assets
