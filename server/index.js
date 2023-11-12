@@ -15,6 +15,7 @@ app.get('/surfeuses-bout-du-monde', function (req, res) {res.render('surfeuses-b
 app.get('/matin-des-arbres', function (req, res) {res.render('matin-des-arbres', {page: 'livres', title: 'Matin des Arbres'});});
 app.get('/eaux-interieures', function (req, res) {res.render('eaux-interieures', {page: 'livres', title: 'Eaux Intérieures'});});
 app.get('/mondes-arree', function (req, res) {res.render('mondes-arree', {page: 'livres', title: 'Mondes Arrée'});});
+app.get('/une-vie-d-emilienne-kerhoas', function (req, res) {res.render('emilienne-kerhoas', {page: 'livres', title: 'Une vide d\'Émilienne Kerhoas'});});
 app.get('/abbaye', function (req, res) {res.render('abbaye', {page: 'abbaye', title: 'Abbaye Saint-Guénolé'});});
 app.get('/ocean', function (req, res) {res.render('ocean', {page: 'ocean', title: 'Océan'});});
 app.get('/foret', function (req, res) {res.render('foret', {page: 'foret', title: 'Forêt'});});
